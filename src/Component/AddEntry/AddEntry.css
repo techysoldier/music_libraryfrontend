@@ -1,20 +1,35 @@
 .add_button{
-    font-size: small;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display:flex;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
     margin-left: 1rem;
-    font-size: 11px;
-    border-radius: 0%;
+  background: linear-gradient(90deg, rgb(246, 246, 246) 0%, rgb(97, 210, 241) 100%);
+    border: none;
+    border-radius: 1000px;
+   
+    transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.0)
-
+    outline: none;
+    position: center;
+    padding: 5px;
+    
 }
 
 .form-grid{
     display: flex;
     background-color: transparent;
+    width: 50%;
     margin-top: 1rem;
+    background-color:white;
+    margin:1rem;
+    margin-left: 38rem;
+    box-shadow: 4px 4px 8px grey;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
     
 }

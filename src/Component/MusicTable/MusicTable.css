@@ -46,11 +46,15 @@
 }
 
 .table{
-    border: 2px;
-    border-style: solid;
-    border-color: black
-    
+     background-color:white;
+     margin-left:50rem;
+     box-shadow: 4px 4px 8px grey;
+     border-radius: 25px;
+     padding: 20px;
+     text-decoration: none;
+         
 }
+
 
 tbody th,
 td {

@@ -3,14 +3,11 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: lightblue;
+    background: linear-gradient(lightblue,white,royalblue);
 
 }
 
-.SearchBar{
-    box-shadow: 3px 3px 20px grey
-}
-
-.getAllSongs {
+button.getAllSongs {
     margin-bottom: 1rem;
+ 
 }
