@@ -4,13 +4,17 @@
     text-align: center;
     text-decoration: none;
     display:flex;
-    right:57%;
+    margin-left: 1rem;
     font-size: 11px;
     border-radius: 0%;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.0)
+
 }
 
 .form-grid{
     display: flex;
+    background-color: transparent;
+    margin-top: 1rem;
+    
 }

@@ -6,7 +6,7 @@ const AddEntry = (props) => {
     const [title, setTitle] = useState('');
     const [artist, setArtist] = useState('');
     const [album, setAlbum] = useState('');
-    const [release, setRelease] = useState('');
+    const [release_date, setRelease] = useState('');
     const [genre, setGenre] = useState('');
 
 
@@ -17,7 +17,7 @@ const AddEntry = (props) => {
             artist: artist,
             album: album,
             genre: genre,
-            release: release,
+            release_date: release_date,
 
         };
         console.log(newSong);
@@ -43,7 +43,7 @@ const AddEntry = (props) => {
             </div>
             <div className='form-group'>
                 <label>Release Date</label>
-                <input type='text' className='form-control' value={release} onChange={(event) => setRelease(event.target.value)}/>
+                <input type='text' className='form-control' value={release_date} onChange={(event) => setRelease(event.target.value)}/>
             </div>
                 <button type='submit' className="add_button" style={{'marginCenter': '1em'}}>Add</button>
         </form>

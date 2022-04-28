@@ -5,9 +5,10 @@ import AddEntry from './Component/AddEntry/AddEntry';
 import './App.css'
 import SearchBar from './Component/SearchBar/SearchBar';
 
+
 function App() {
 
-    const [music, setMusic] = useState([{title:'', artist: '', genre:'', release_date:'', likes:'' }])
+    const [song, setSongs] = useState([{title:'', artist: '', genre:'', release_date:'', likes:'' }])
 
     useEffect(() => {
       getAllSongs();
@@ -15,8 +16,9 @@ function App() {
 
     async function getAllSongs(){
       try{
-        let response = await axios.get('http://127.0.0.1:8000/music');
-        setMusic(response.data);
+        let response = await axios.get('http://127.0.0.1:8000/music/');
+        console.log(response.data)
+        setSongs(response.data);
 
       } catch(ex) {
         console.log ('Error');
@@ -24,22 +26,21 @@ function App() {
     }
   
   async function addSong(newSong){
-
-let response = await axios.post('http://127.0.0.1:8000/music', newSong);
-if(response.status === 201){
-  await getAllSongs();
+    let response = await axios.post('http://127.0.0.1:8000/music/', newSong);
+    if(response.status === 201){
+      await getAllSongs();
 } 
 }
   return (
     <div>
         <div>
-        <SearchBar songs={music} setSongs={setMusic} />
+        <SearchBar songs={song} setSongs={setSongs} />
       </div>
       <div>
       <button className ='getAllSongs' onClick = {getAllSongs}>Music Time Download your Library!</button>
     </div>
       <div className='row-posts'>
-        <MusicTable parentMusicTable = {music}/>
+        <MusicTable parentMusicTable = {song}/>
       </div>  
       <div className='row-createSong'>
         <AddEntry addNewSongProperty = {addSong}/>

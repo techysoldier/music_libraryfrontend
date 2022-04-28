@@ -1,3 +1,5 @@
+
+
 body {
     width: 100vw;
     height: 100vh;
@@ -5,3 +7,10 @@ body {
 
 }
 
+.SearchBar{
+    box-shadow: 3px 3px 20px grey
+}
+
+.getAllSongs {
+    margin-bottom: 1rem;
+}

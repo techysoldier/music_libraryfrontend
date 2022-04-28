@@ -5,7 +5,11 @@
     padding-top: 1rem;
     box-shadow: 2px 2px 6px;
     margin-bottom: 2rem;
+    color: white;
 }
 .heading {
     font-family: sans-serif;
+    color: black;
+    text-align: center;
 }
+

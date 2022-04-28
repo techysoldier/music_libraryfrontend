@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
-
-
 const SearchBar = (props) => {
   const [songSearch, setSongSearch] = useState("");
 
   function searchResults(event) {
     event.preventDefault();
-    let response = props.songs.filter((song_list) => {
-      if (song_list.album.includes(songSearch)) {
+    let response = props.songs.filter((song) => {
+      if (song.album.includes(songSearch)) {
         return true;
-      } else if (song_list.artist.includes(songSearch)) {
+      } else if (song.artist.includes(songSearch)) {
         return true;
-      } else if (song_list.title.includes(songSearch)) {
+      } else if (song.title.includes(songSearch)) {
         return true;
-      } else if (song_list.genre.includes(songSearch)) {
+      } else if (song.genre.includes(songSearch)) {
         return true;
-      } else if (song_list.release_date.includes(songSearch)) {
+      } else if (song.release_date.includes(songSearch)) {
         return true;
       }
     });

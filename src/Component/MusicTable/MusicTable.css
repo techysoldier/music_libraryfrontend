@@ -1,25 +1,59 @@
 
-.index {
+.index-col {
     text-decoration: none;
+    text-align: center;
+     padding: 10px;
+     margin-right: 4rem;
 }
 
-.release-col{
+.release_date-col{
     font-family: sans-serif;
+    text-align: center;
+     padding: 10px;
+     margin-right: 4rem;
 
 }
 
 .genre-col{
     font-family: sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-right: 4rem;
 }
 
 .album-col{
      font-family: sans-serif;
+     text-align: center;
+     padding: 10px;
+     margin-right: 4rem;
 }
 
 .artist-col{
      font-family: sans-serif;
+     margin: 1rem;
+     text-align: center;
+     padding: 10px;
+     margin-right: 4rem;
+
 }
 
 .title-col{
      font-family: sans-serif;
+     margin: 1rem;
+     text-align: center;
+     padding: 10px;
+     margin-right: 4rem;
+}
+
+.table{
+    border: 2px;
+    border-style: solid;
+    border-color: black
+    
+}
+
+tbody th,
+td {
+  text-align: center;
+  padding: 10px;
 }
