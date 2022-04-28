@@ -35,10 +35,8 @@ function App() {
     <div>
         <div>
         <SearchBar songs={song} setSongs={setSongs} />
+        <button className ='getAllSongs' onClick = {getAllSongs}>Music Time Download your Library!</button>
       </div>
-      <div>
-      <button className ='getAllSongs' onClick = {getAllSongs}>Music Time Download your Library!</button>
-    </div>
       <div className='row-posts'>
         <MusicTable parentMusicTable = {song}/>
       </div>  

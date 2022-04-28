@@ -9,5 +9,23 @@ body {
 
 button.getAllSongs {
     margin-bottom: 1rem;
+    margin-left: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    margin-left: 1rem;
+  background: linear-gradient(90deg, rgb(246, 246, 246) 0%, rgb(255, 255, 255) 100%);
+    border: none;
+    border-radius: 1000px;
+   
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: center;
+    padding: 5px;
  
 }
