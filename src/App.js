@@ -1,6 +1,9 @@
 import axios from 'axios';
 import React, { useState,useEffect } from 'react';
 import MusicTable from './Component/MusicTable/MusicTable';
+import AddEntry from './Component/AddEntry/AddEntry';
+import './App.css'
+import SearchBar from './Component/SearchBar/SearchBar';
 
 function App() {
 
@@ -13,7 +16,7 @@ function App() {
     async function getAllSongs(){
       try{
         let response = await axios.get('http://127.0.0.1:8000/music');
-        console.log(response.data);
+        setMusic(response.data);
 
       } catch(ex) {
         console.log ('Error');
@@ -29,15 +32,17 @@ if(response.status === 201){
 }
   return (
     <div>
-      <h1>Music Library</h1>
+        <div>
+        <SearchBar songs={music} setSongs={setMusic} />
+      </div>
       <div>
-      <button className ='getAllSongs' onClick = {getAllSongs}>Music Time!</button>
+      <button className ='getAllSongs' onClick = {getAllSongs}>Music Time Download your Library!</button>
     </div>
       <div className='row-posts'>
         <MusicTable parentMusicTable = {music}/>
       </div>  
-      <div class name='row-createSong'>
-        {/* <AddEntry addNewSongProperty = {addSong}/> */}
+      <div className='row-createSong'>
+        <AddEntry addNewSongProperty = {addSong}/>
         </div>
       
     </div>

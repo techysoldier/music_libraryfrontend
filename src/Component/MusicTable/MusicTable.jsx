@@ -1,4 +1,4 @@
-
+import './MusicTable.css';
 
 const MusicTable = (props) => {
     
@@ -7,7 +7,7 @@ const MusicTable = (props) => {
     return(
         <div>
         
-        <table className="table" chartType='Table'>
+        <table className="table" chart='Table'>
                 <thead>
                     <tr>
                     <th scope="col" className ="title-col">Title</th>
@@ -21,7 +21,7 @@ const MusicTable = (props) => {
                 {props.parentMusicTable.map((songs, index) => {
                     return(
                         <tr key={index}>
-                        <td>{index+1}</td>
+                        <td>{index}</td>
                         <td>{songs.Title}</td>
                         <td>{songs.artist}</td>    
                         <td>{songs.album}</td>
